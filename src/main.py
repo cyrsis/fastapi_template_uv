@@ -10,7 +10,7 @@ if __name__ == "__main__":
 import uvicorn
 from loguru import logger
 from services.logs import configure_logger, get_uvicorn_log_config
-
+from app.app import app  # M
 
 def main() -> None:
     configure_logger()
