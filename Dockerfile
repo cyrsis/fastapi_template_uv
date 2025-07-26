@@ -30,4 +30,4 @@ WORKDIR /app
 
 EXPOSE 8080
 # Run app. (defined in pyproject.toml)
-CMD ["python", "main.py"]
+CMD ["/app/.venv/bin/fastapi", "run", "app/main.py"]
