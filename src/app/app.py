@@ -19,10 +19,9 @@ app = FastAPI(
     }, )
 
 origins = [
-    "https://pwa.kszetta.com",
-    "http://localhost:8000",  # Allow origins (you may want to change this depending on your setup)
-    "http://localhost:8080",
+    "*"
 ]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,  # List of origins allowed (you can use ["*"] to allow all)
@@ -31,8 +30,9 @@ app.add_middleware(
     allow_headers=["*"],  # List of headers allowed (you can use ["*"] to allow all)
 )
 
-
 app.get("/")
+
+
 async def docs_redirect():
     return RedirectResponse(url='/docs')
 
