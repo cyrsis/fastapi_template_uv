@@ -1,6 +1,8 @@
 
 # Template for my Python projects with FastAPI
-Feel free to use! Loguru included!
+
+# Python Version 3.13
+
 
 
 26 Jul 2025 at 14:47:25
