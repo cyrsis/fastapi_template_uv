@@ -2,9 +2,12 @@ import sys
 
 from loguru import logger
 
-from services.logs.handlers import UvicornHandler
+# from services.logs.handlers import UvicornHandler
+from src.services.logs.handlers import UvicornHandler
 
 __all__ = ["UvicornHandler", "configure_logger", "get_uvicorn_log_config"]
+
+
 
 
 def configure_logger() -> None:
