@@ -5,8 +5,8 @@ from starlette.responses import RedirectResponse
 from app.routers import router as main_router
 
 app = FastAPI(
-    title="Fast KS Send Email Server",
-    description="Send Email Service",
+    title="Fast Template for development and Production",
+    description="",
     version="11.3.1",
     contact={
         "name": "Victor Tong",
