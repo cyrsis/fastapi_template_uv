@@ -28,5 +28,6 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 WORKDIR /app
 
+EXPOSE 8080
 # Run app. (defined in pyproject.toml)
-CMD ["app"]
+CMD ["python", "main.py"]
