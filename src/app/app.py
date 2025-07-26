@@ -4,18 +4,19 @@ from starlette.responses import RedirectResponse
 
 from app.routers import router as main_router
 
-app = FastAPI(title="Fast KS Send Email Server",
-              description="Send Email Service",
-              version="11.3.1",
-              contact={
-                  "name": "Victor Tong",
-                  "url": "http://x-force.example.com/contact/",
-                  "email": "victor@budgetapp.works",
-              },
-              license_info={
-                  "name": "Apache 2.0",
-                  "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
-              }, )
+app = FastAPI(
+    title="Fast KS Send Email Server",
+    description="Send Email Service",
+    version="11.3.1",
+    contact={
+        "name": "Victor Tong",
+        "url": "http://x-force.example.com/contact/",
+        "email": "victor@budgetapp.works",
+    },
+    license_info={
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    }, )
 
 origins = [
     "https://pwa.kszetta.com",
