@@ -1,6 +1,5 @@
 import uvicorn
 from loguru import logger
-
 from services.logs import configure_logger, get_uvicorn_log_config
 
 

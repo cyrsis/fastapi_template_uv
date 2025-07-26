@@ -25,6 +25,7 @@ COPY --from=builder --chown=app:app /app /app
 
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
+ENV PYTHONPATH=/app:$PYTHONPATH
 
 WORKDIR /app
 
