@@ -32,7 +32,7 @@ app.add_middleware(
 )
 
 
-@app.get("/")
+app.get("/")
 async def docs_redirect():
     return RedirectResponse(url='/docs')
 
