@@ -29,5 +29,6 @@ ENV PATH="/app/.venv/bin:$PATH"
 WORKDIR /app
 
 EXPOSE 8080
-# Run app. (defined in pyproject.toml)
-CMD ["/app/.venv/bin/fastapi", "run", "main.py"]
+
+# Replace the CMD with:
+CMD ["/app/.venv/bin/uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080"]
