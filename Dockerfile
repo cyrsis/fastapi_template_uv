@@ -28,7 +28,6 @@ ENV PATH="/app/.venv/bin:$PATH"
 ENV PYTHONPATH=/app:$PYTHONPATH
 
 WORKDIR /app
-
 EXPOSE 8080
 
 # Replace the CMD with:
